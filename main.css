@@ -1,0 +1,142 @@
+:root {
+	--default-color: #050505;
+	--default-color-invert: #fcfcfc;
+	--default-color-invert-dark: #ececec;
+	--default-color-invert-darker: #ccc;
+	--default-color-tint: #007AFF;
+	--default-color-tint-invert: #fff;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	margin: 80px 20px;
+	font: 11pt "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	color: var(--default-color);
+	background-color: var(--default-color-invert);
+}
+
+a {
+	color: var(--default-color-tint);
+}
+
+label {
+	display: block;
+}
+
+input[type=color],
+input[type=file],
+input[type=number],
+input[type=tel],
+input[type=text],
+input[type=range],
+input[type=search],
+input[type=url],
+input[type=email],
+input[type=password] {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+input[type=color],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url] {
+	border: solid 1px var(--default-color-invert-darker);
+	padding: 10px;
+	color: var(--default-color);
+	background-color: var(--default-color-invert);
+}
+
+input[type=range] {
+	width: 50%;
+	padding: 0;
+}
+
+input[type=color]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=url]:focus {
+	border-color: var(--default-color-tint);
+}
+
+select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+fieldset {
+	background-color: var(--default-color-invert-dark);
+	border: none;
+	border-radius: 3px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+legend {
+	position: relative;
+	top: -15px;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: var(--default-color-invert-dark);
+	border: none;
+	border-radius: 3px;
+}
+
+button:focus,
+button:active {
+	background-color: var(--default-color-invert-darker);
+}
+
+button[type=submit] {
+	color: var(--default-color-tint-invert);
+	background-color: var(--default-color-tint);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	padding: 10px 20px;
+	border-bottom: solid 1px #ccc;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+nav h1 {
+	margin: 0;
+	font-weight: normal;
+	display: inline-block;
+}
+
+nav ul {
+	display: inline-block;
+	float: right;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 10px 20px;
+	height: 30px;
+	line-height: 30px;
+}
