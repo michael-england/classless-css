@@ -85,8 +85,12 @@ fieldset {
 }
 
 legend {
-	position: relative;
-	top: -15px;
+	display: block;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: var(--default-color-invert-darker);
 }
 
 button {
@@ -114,6 +118,7 @@ nav {
 	height: 30px;
 	padding: 10px 20px;
 	border-bottom: solid 1px #ccc;
+	background-color: rgba(255, 255, 255, 0.3);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 }
