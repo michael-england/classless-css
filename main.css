@@ -13,7 +13,7 @@
 
 body {
 	margin: 80px 20px;
-	font: 11pt "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font: 11pt "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: var(--default-color);
 	background-color: var(--default-color-invert);
 }
@@ -24,31 +24,47 @@ a {
 
 label {
 	display: block;
+    margin-bottom: 5px;
 }
 
 input[type=color],
+input[type=datetime-local],
+input[type=date],
+input[type=email],
 input[type=file],
+input[type=month],
 input[type=number],
 input[type=tel],
 input[type=text],
+input[type=time],
 input[type=range],
 input[type=search],
 input[type=url],
-input[type=email],
-input[type=password] {
+input[type=password],
+input[type=week] {
 	width: 100%;
 	margin-bottom: 10px;
+    outline: none;
 }
 
 input[type=color],
+input[type=datetime-local],
+input[type=date],
 input[type=email],
+input[type=file],
+input[type=month],
 input[type=number],
-input[type=password],
-input[type=search],
 input[type=tel],
 input[type=text],
-input[type=url] {
+input[type=time],
+input[type=range],
+input[type=search],
+input[type=url],
+input[type=password],
+input[type=week],
+select {
 	border: solid 1px var(--default-color-invert-darker);
+    border-radius: 5px;
 	padding: 10px;
 	color: var(--default-color);
 	background-color: var(--default-color-invert);
@@ -57,23 +73,35 @@ input[type=url] {
 input[type=range] {
 	width: 50%;
 	padding: 0;
+    outline: none;
 }
 
 input[type=color]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
 input[type=email]:focus,
+input[type=file]:focus,
+input[type=month]:focus,
 input[type=number]:focus,
-input[type=password]:focus,
-input[type=search]:focus,
 input[type=tel]:focus,
 input[type=text]:focus,
-input[type=url]:focus {
+input[type=time]:focus,
+input[type=range]:focus,
+input[type=search]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=week]:focus,
+select:focus{
+    outline: none;
 	border-color: var(--default-color-tint);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
 }
 
 select {
-	width: 100%;
+    height: 33px;
+    margin-bottom: 10px;
 	padding: 10px;
-	margin-bottom: 10px;
+    width: 100%;
 }
 
 fieldset {
@@ -88,16 +116,18 @@ legend {
 	display: block;
 	float: left;
 	width: 100%;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+    margin-top: 10px;
 	text-transform: uppercase;
-	color: var(--default-color-invert-darker);
+	color: #979797;
 }
 
 button {
+    background-color: var(--default-color-invert-dark);
+    border: none;
+    border-radius: 5px;
 	padding: 10px 20px;
-	background-color: var(--default-color-invert-dark);
-	border: none;
-	border-radius: 3px;
+    outline: none;
 }
 
 button:focus,
@@ -118,7 +148,7 @@ nav {
 	height: 30px;
 	padding: 10px 20px;
 	border-bottom: solid 1px #ccc;
-	background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 }
