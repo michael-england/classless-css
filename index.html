@@ -1,16 +1,22 @@
 <html>
 <head>
     <title>Classless CSS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles/vars.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
 </head>
 <body>
 <header>
     <nav>
-        <h1>Classless CSS</h1>
+        <h1><a href="index.html">Classless CSS</a></h1>
+        <form>
+            <input type="search" name="search" id="search" placeholder="Search"/>
+            <button type="submit">Search</button>
+        </form>
         <ul>
             <li><a href="text.html">Text</a></li>
             <li><a href="forms.html">Forms</a></li>
+            <li><a href="lists.html">Lists</a></li>
             <li><a href="tables.html">Tables</a></li>
         </ul>
     </nav>
@@ -19,6 +25,6 @@
     <article>
         <p>Better default browser styles</p>
     </article>
-    <main>
+</main>
 </body>
 </html>

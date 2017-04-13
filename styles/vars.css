@@ -1,0 +1,12 @@
+:root {
+    --color: #050505;
+    --color-invert: #fcfcfc;
+    --color-invert-dark: #ececec;
+    --color-invert-darker: #ccc;
+    --color-tint: #007AFF;
+    --color-tint-light: #66AFE9;
+    --color-tint-invert: #fff;
+    --color-tint-dark: #0069dc;
+    --color-header: rgba(255, 255, 255, 0.7);
+    --color-header-dark: var(--color-invert-darker);
+}
