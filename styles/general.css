@@ -1,0 +1,60 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+}
+
+body {
+    margin: 80px 20px 20px 20px;
+    font: 11pt "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: var(--color);
+    background-color: var(--color-invert);
+    line-height: 1.8em;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+aside {
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+aside:first-child {
+    margin: 0 20px 0 0;
+}
+
+aside:last-child {
+    margin: 0 0 0 20px;
+}
+
+article {
+    flex: 1 1 auto;
+    display: inline;
+}
+
+a {
+    color: var(--color-tint);
+    transition: color 0.5s;
+}

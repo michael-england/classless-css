@@ -1,0 +1,48 @@
+main > ul {
+    flex: 1 1 auto;
+    padding: 0;
+}
+
+main > ul li {
+    display: block;
+    padding: 10px;
+    border-bottom: solid 1px var(--color-invert-dark);
+}
+main > ul > li:first-child {
+    border-top: solid 1px var(--color-invert-dark);
+}
+
+main > ul li > a {
+    color: var(--color);
+    display: block;
+    margin: -10px;
+    padding: 10px;
+    text-decoration: none;
+    transition: none;
+}
+
+main > ul li > a:after {
+    content: ' ';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: solid 2px var(--color);
+    border-right: solid 2px var(--color);
+    margin: 10px;
+    transform: rotate(-45deg);
+    float: right;
+}
+
+main > ul li > a:hover,
+main > ul li > a:focus,
+main > ul li > a:active {
+    color: var(--color-tint);
+    background-color: var(--color-invert-dark);
+}
+
+main > ul li > a:hover:after,
+main > ul li > a:focus:after,
+main > ul li > a:active:after {
+    border-bottom-color: var(--color-tint);
+    border-right-color: var(--color-tint);
+}

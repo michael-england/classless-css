@@ -1,8 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Classless CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="styles/vars.css"/>
     <link rel="stylesheet" href="styles/main.css"/>
 </head>
 <body>
@@ -10,7 +10,7 @@
     <nav>
         <h1><a href="index.html">Classless CSS</a></h1>
         <form>
-            <input type="search" name="search" id="search" placeholder="Search"/>
+            <input type="search" name="search" id="search" placeholder="Search" aria-label="Search"/>
             <button type="submit">Search</button>
         </form>
         <ul>
@@ -35,8 +35,8 @@
         <label for="text">Text</label>
         <input type="text" name="text" id="text" placeholder="Placeholder"/>
 
-        <label for="search">Search</label>
-        <input type="search" name="search" id="search" placeholder="Placeholder" results="5"/>
+        <label for="search2">Search</label>
+        <input type="search" name="search" id="search2" placeholder="Placeholder"/>
 
         <label for="color">Color</label>
         <input type="color" name="color" id="color" placeholder="Placeholder"/>
@@ -57,7 +57,7 @@
         <input type="file" name="file" id="file" placeholder="Placeholder"/>
 
         <label for="select">Select</label>
-        <select name="select" id="select" placeholder="Placeholder">
+        <select name="select" id="select">
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
             <option value="3">Option 3</option>
